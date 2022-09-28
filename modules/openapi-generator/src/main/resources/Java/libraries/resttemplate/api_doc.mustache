@@ -33,7 +33,7 @@ import {{{package}}}.{{{classname}}};
 
 public class Example {
     public static void main(String[] args) {
-        ApiClient defaultClient = Configuration.getDefaultApiClient();
+        ApiClient defaultClient = new ApiClient();
         defaultClient.setBasePath("{{{basePath}}}");
         {{#hasAuthMethods}}
         {{#authMethods}}{{#isBasic}}{{#isBasicBasic}}
